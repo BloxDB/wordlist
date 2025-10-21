@@ -1,8 +1,9 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import subprocess
 import sys
 from pathlib import Path
+
 
 def main():
     result = subprocess.run(
@@ -20,8 +21,10 @@ def main():
     print("Wordlist files detected, checking for duplicates...")
     print()
     
+    python_cmd = 'python' if sys.platform == 'win32' else 'python3'
+    
     result = subprocess.run(
-        ['python', 'scripts/check_duplicates.py'],
+        [python_cmd, 'scripts/check_duplicates.py'],
         capture_output=False
     )
     
