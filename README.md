@@ -45,3 +45,8 @@ GitHub Actions will run this automatically on all pushes and pull requests.
 ## Support
 
 [Join our Discord server](https://discord.blox.wtf) or open an issue if you need help.
+
+## Credits
+
+- BloxDB Team: Repository maintenance
+- ino: Original wordlist
